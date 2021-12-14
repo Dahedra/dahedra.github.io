@@ -13,7 +13,18 @@ Mi segunda pasión es la cocina, específicamente la repostería, y como buena m
 ## Primeros Pasos
 
 ### Estructura de archivos
-
+Landing\
+&ensp;|_ Components\
+&ensp;|_ CSS\
+&ensp;|_ Data\
+RecipeBook\
+&ensp;|_ Components\
+&ensp;|_ CSS\
+&ensp;|_ Data\
+&ensp;&ensp;&ensp;|_ CRUD\
+&ensp;&ensp;&ensp;|_ Models\
+&ensp;&ensp;&ensp;|_ Router\
+  
 ### Teconologías
 
 #### *Angular Material UI*
