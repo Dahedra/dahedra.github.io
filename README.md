@@ -14,8 +14,10 @@ Mi segunda pasión es la cocina, específicamente la repostería, y como buena m
 
 ### Estructura de archivos
 
-### Angular Material UI
+### Teconologías
+
+#### *Angular Material UI*
 Anteriormente en la carrera nos mostraron la parte de diseño utilizando bootstrap, pero en el caso de la pagina principal, por motivos de orientación estética, me parece una mejor elección esta teconología y un excelente insentivo para adentrarme en este aprendizaje.
 
-### Bootstrap
+#### *Bootstrap*
 Me parece sumamente intuitivo y sencillo, perfecto para la sección del recetario.
