@@ -3,6 +3,12 @@
 }
 
 .App-header {
+  z-index: 99;
+  position: fixed;
+  width: 100vw;
+}
+
+.profile-page-0{
   background-color: #f1d5bb;
   min-height: 100vh;
   display: flex;
@@ -11,7 +17,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(56, 111, 173);
-  position: relative;
 }
 
 .description-page-1 {

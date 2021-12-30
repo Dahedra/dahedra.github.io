@@ -9,7 +9,7 @@ export default function ScrollTop () {
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
-        if (pageYOffset > 400) {
+        if (pageYOffset > 1299) {
           setVisible(true)
         } else{
           setVisible(false)
@@ -24,7 +24,7 @@ export default function ScrollTop () {
 
     return (
         <Button className="scroll-button" onClick={scrollToTop}>
-            <IoIosArrowUp/>
+            <IoIosArrowUp fontSize={"100"} color="beige"/>
         </Button>
     )
 }
