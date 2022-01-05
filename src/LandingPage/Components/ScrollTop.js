@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useWindowScroll } from "react-use";
 import Button from "@mui/material/Button";
 import { IoIosArrowUp } from "react-icons/io";
+import "./ScrollTop.css";
 
 
 export default function ScrollTop () {
@@ -24,7 +25,7 @@ export default function ScrollTop () {
 
     return (
         <Button className="scroll-button" onClick={scrollToTop}>
-            <IoIosArrowUp fontSize={"100"} color="beige"/>
+            <IoIosArrowUp className="scroll-icon"/>
         </Button>
     )
 }

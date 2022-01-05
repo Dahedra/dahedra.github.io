@@ -1,5 +1,6 @@
 import React from "react";
 import "animate.css";
+import "./Information.css";
 
 export default function Information() {
   return (
@@ -29,12 +30,14 @@ export default function Information() {
           </div>
         </div>
 
-        <div className="information-details-hobby2">
-          <span></span>
-        </div>
+        <div className="information-details-education">
+          <div className="animate__animated animate__fadeInLeft">
+            <h1>5 años de inglés - Advance, School of English</h1>
+          </div>
 
-        <div className="information-details-hobby3">
-          <span></span>
+          <div className="animate__animated animate__fadeInLeft animate__delay-1s">
+            <h1>Técnico universitario en programación</h1>
+          </div>
         </div>
       </div>
     </div>

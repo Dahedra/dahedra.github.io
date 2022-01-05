@@ -3,32 +3,47 @@
 }
 
 .App-header {
+  display: flex;
+  justify-content: center;
   z-index: 99;
   position: fixed;
   width: 100vw;
 }
 
-.profile-page-0{
-  background-color: #f1d5bb;
+.profile-page-0 {
+  background-color: #E3B464;
+  background-image: url(./LandingPage/Data/Backgrounds/image-from-rawpixel-id-931567-jpeg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-shadow: inset 0px 0px 100px 20px #E8EAED;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(56, 111, 173);
 }
 
 .description-page-1 {
-  background-color: #f1d5bb;
+  background-color: #E3B464;
+  background-image: url(./LandingPage/Data/Backgrounds/image-from-rawpixel-id-931567-jpeg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-shadow: inset 0px 0px 100px 20px #E8EAED;
+  min-height: 100vh;
 }
 
 .proyects-page-2 {
-  background-color: #f1d5bb;
+  background-color: #E3B464;
+  background-image: url(./LandingPage/Data/Backgrounds/image-from-rawpixel-id-931567-jpeg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-shadow: inset 0px 0px 100px 20px #E8EAED;
+  min-height: 100vh;
 }
 
 .information-page-3 {
-  background-color: #f1d5bb;
+  background-color: #E3B464;
+  background-image: url(./LandingPage/Data/Backgrounds/image-from-rawpixel-id-931567-jpeg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-shadow: inset 0px 0px 100px 20px #E8EAED;
+  min-height: 100vh;
 }
 
 .App-link {
