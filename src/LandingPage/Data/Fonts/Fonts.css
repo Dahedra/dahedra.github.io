@@ -8,29 +8,8 @@
 }
 
 @font-face {
-    font-family: 'khiara'; 
-    src: url(./_2020_nugs_project_khiara_script-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'hiromisake'; 
     src: url(./hiromisake-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'beway'; 
-    src: url(./beway-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'beway-light'; 
-    src: url(./bewaylight-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }

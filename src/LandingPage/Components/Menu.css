@@ -3,7 +3,6 @@
   display: flex;
   justify-content:space-evenly;
   justify-items:center;
-  background-color: #a49e8d;
-  opacity: 90%;
-  width: 100vw;
+  width: fit-content;
+  background-color: transparent;
 }

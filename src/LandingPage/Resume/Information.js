@@ -1,8 +1,25 @@
 import React from "react";
 import "animate.css";
 import "./Information.css";
+import { useWindowScroll } from "react-use";
+import { useState, useEffect } from "react";
 
 export default function Information() {
+  const { y: pageYOffset } = useWindowScroll();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (pageYOffset > 3899) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  }, [pageYOffset]);
+
+  if (!visible) {
+    return false;
+  }
+
   return (
     <div className="information-container">
       <div className="information-parent">
@@ -10,33 +27,33 @@ export default function Information() {
 
         <div className="information-details-languages">
           <div className="animate__animated animate__fadeInLeft">
-            <h1 className="information-javascript">JavaScript</h1>
+            <span className="information-javascript">JavaScript</span>
           </div>
 
           <div className="animate__animated animate__fadeInLeft animate__delay-1s">
-            <h1 className="information-html">HTML</h1>
+            <span className="information-html">HTML</span>
           </div>
 
           <div className="animate__animated animate__fadeInLeft animate__delay-2s">
-            <h1 className="information-react">React</h1>
+            <span className="information-react">React</span>
           </div>
 
           <div className="animate__animated animate__fadeInLeft animate__delay-3s">
-            <h1 className="information-c#">C#</h1>
+            <span className="information-c#">C#</span>
           </div>
 
           <div className="animate__animated animate__fadeInLeft animate__delay-4s">
-            <h1 className="information-postgresql">postgreSQL</h1>
+            <span className="information-postgresql">postgreSQL</span>
           </div>
         </div>
 
         <div className="information-details-education">
           <div className="animate__animated animate__fadeInLeft">
-            <h1>5 años de inglés - Advance, School of English</h1>
+            <span>5 años de inglés - Advance, School of English</span>
           </div>
 
           <div className="animate__animated animate__fadeInLeft animate__delay-1s">
-            <h1>Técnico universitario en programación</h1>
+            <span>Técnico universitario en programación</span>
           </div>
         </div>
       </div>
