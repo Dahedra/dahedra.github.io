@@ -13,17 +13,3 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'bitalo'; 
-    src: url(./bitalo-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'visually'; 
-    src: url(./visually-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}

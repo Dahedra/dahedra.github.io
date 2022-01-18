@@ -1,9 +1,6 @@
-import ScrollTop from "./ScrollTop";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material//Toolbar";
-import VolumeSlider from "./VolumeSlider";
 import Button from "@mui/material/Button";
-import "./Menu.css";
 import "../Data/Fonts/Fonts.css";
 
 export default function Menu() {
@@ -48,7 +45,7 @@ export default function Menu() {
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
-              marginX: "1%"
+              marginX: "1%",
             }}
             onClick={goToHome}
           >
@@ -60,7 +57,7 @@ export default function Menu() {
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
-              marginX: "1%"
+              marginX: "1%",
             }}
             onClick={goToDescription}
           >
@@ -72,7 +69,7 @@ export default function Menu() {
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
-              marginX: "1%"
+              marginX: "1%",
             }}
             onClick={goToProyects}
           >
@@ -84,7 +81,7 @@ export default function Menu() {
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
-              marginX: "1%"
+              marginX: "1%",
             }}
             onClick={goToInformation}
           >
@@ -92,7 +89,6 @@ export default function Menu() {
           </Button>
         </Toolbar>
       </AppBar>
-      <ScrollTop />
     </>
   );
 }

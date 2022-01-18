@@ -1,11 +1,59 @@
+.information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 80vw;
+}
 .information-parent {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    hsla(224, 34%, 23%, 0.85) 0%,
+    hsla(177, 58%, 13%, 0.808) 100%
+  );
+  padding: 4%;
+  box-shadow: 0px 0px 100px 1px hsla(217, 71%, 36%, 0.808);
+  border-radius: 40px;
+  height: 50vh;
+  width: 40vw;
+  font-family: "Lato", sans-serif;
+  font-size: calc(1vw + 15px);
+  color: white;
 }
 
 .information-details {
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.information-details-languages {
-    
+.information-javascript {
+  color: rgb(180, 180, 61);
+  margin-top: 50%;
+  margin-bottom: 50%;
 }
+
+.information-html {
+  color: rgb(97, 97, 231);
+  margin-bottom: 50%;
+}
+
+.information-react {
+  color: rgb(93, 191, 204);
+  margin-bottom: 50%;
+}
+
+.information-csharp {
+  color: rgb(151, 109, 231);
+  margin-bottom: 50%;
+}
+
+.information-postgresql {
+  color: rgb(26, 137, 228);
+  margin-bottom: 50%;
+}
+

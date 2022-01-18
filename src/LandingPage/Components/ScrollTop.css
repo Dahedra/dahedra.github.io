@@ -1,16 +1,12 @@
 .scroll-button {
   position: relative;
   top: 90vh;
-  left: 47vw;
+  width: 100vw;
 }
 
 .scroll-icon {
-  background: linear-gradient(
-    0deg,
-    hsla(31, 50%, 76%, 0.7) 0%,
-    hsla(46, 54%, 69%, 0.85) 100%
-  );
+  background: transparent;
   border-radius: 30px;
   color: white;
-  font-size: 100px;
+  font-size: calc(3vw + 50px);
 }
