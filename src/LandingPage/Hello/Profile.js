@@ -55,13 +55,13 @@ function ProfileDefinition({ isVisible }, ref) {
               className="profile-social-icons"
             />
           </a>
-          <a href="#" target="_blank">
+          <a href="tel:+543435031123" target="_blank">
             <ContactPhoneIcon
               sx={{ fontSize: "calc(1vw + 20px)", marginX: "10px" }}
               className="profile-social-icons"
             />
           </a>
-          <a href="#" target="_blank">
+          <a href="mailto:eloisa.villanueva617@gmail.com" target="_blank">
             <EmailIcon
               sx={{ fontSize: "calc(1vw + 20px)", marginX: "10px" }}
               className="profile-social-icons"
@@ -71,8 +71,8 @@ function ProfileDefinition({ isVisible }, ref) {
 
         <a
           className="profile-resume-link"
-          href="cv.pdf"
-          download="Villanueva Eloisa.pdf"
+          href="https://www.canva.com/design/DAEyQXVEO0U/ZJpGVp_MoOY7AbIEVLe9DA/view?utm_content=DAEyQXVEO0U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          target="_blank"
         >
           <Button
             className="resume-button"
@@ -84,7 +84,7 @@ function ProfileDefinition({ isVisible }, ref) {
               fontWeight: "600",
             }}
           >
-            Descargar CV
+            Curriculum
           </Button>
         </a>
       </div>

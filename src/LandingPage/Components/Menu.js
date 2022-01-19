@@ -6,6 +6,7 @@ import $ from "jquery";
 
 export default function Menu() {
   var maxHeight = $(window).height() * 4;
+  var scroll = $(window).scrollTop();
 
   const goToHome = () => {
     window.scrollTo({
@@ -44,7 +45,7 @@ export default function Menu() {
         <Toolbar sx={{ justifyContent: "center" }}>
           <Button
             sx={{
-              color: "#24447C",
+              color: scroll < maxHeight * 0.42 ? "#24447C" : "#F2BB72",
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
@@ -56,7 +57,7 @@ export default function Menu() {
           </Button>
           <Button
             sx={{
-              color: "#24447C",
+              color: scroll < maxHeight * 0.42 ? "#24447C" : "#F2BB72",
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
@@ -68,7 +69,7 @@ export default function Menu() {
           </Button>
           <Button
             sx={{
-              color: "#24447C",
+              color: scroll < maxHeight * 0.42 ? "#24447C" : "#F2BB72",
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
@@ -80,7 +81,7 @@ export default function Menu() {
           </Button>
           <Button
             sx={{
-              color: "#24447C",
+              color: scroll < maxHeight * 0.42 ? "#24447C" : "#F2BB72",
               fontSize: "calc(1vmin + 10px)",
               fontFamily: "Lato",
               fontWeight: "800",
