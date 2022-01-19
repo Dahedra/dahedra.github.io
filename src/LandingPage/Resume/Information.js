@@ -2,6 +2,13 @@ import React from "react";
 import "animate.css";
 import "./Information.css";
 
+import CodeIcon from "@mui/icons-material/Code";
+import { DiHtml5 } from "react-icons/di";
+import { DiJavascript1 } from "react-icons/di";
+import { DiCss3Full } from "react-icons/di";
+import { DiReact } from "react-icons/di";
+import { DiPostgresql } from "react-icons/di";
+
 const Information = React.forwardRef(InformationDefinition);
 
 function InformationDefinition({ isVisible }, ref) {
@@ -12,16 +19,43 @@ function InformationDefinition({ isVisible }, ref) {
         ref={ref}
         style={{ visibility: isVisible ? "visible" : "hidden" }}
       >
+        <div className="title">
+          <h1>Languages & Technologies</h1>
+          <hr className="line"/>
+        </div>
+
+        <span className="bracket">&#123;</span>
+
         <div className="information-details">
-          <span className="information-javascript">JavaScript</span>
+          <div className="information-javascript">
+            <DiJavascript1 fontSize={"calc(2vw + 20px)"} />{" "}
+            <span className="information-javascript-text">JavaScript</span>
+          </div>
 
-          <span className="information-html">HTML</span>
+          <div className="information-html">
+            <DiHtml5 fontSize={"calc(2vw + 20px)"} />{" "}
+            <span className="information-html-text">HTML</span>
+          </div>
 
-          <span className="information-react">React</span>
+          <div className="information-react">
+            <DiReact fontSize={"calc(2vw + 20px)"} />{" "}
+            <span className="information-react-text">React</span>
+          </div>
 
-          <span className="information-csharp">C#</span>
+          <div className="information-css">
+            <DiCss3Full fontSize={"calc(2vw + 20px)"} />{" "}
+            <span className="information-css-text">CSS</span>
+          </div>
 
-          <span className="information-postgresql">postgreSQL</span>
+          <div className="information-csharp">
+            <CodeIcon sx={{ fontSize: "calc(2vw + 20px)" }} />{" "}
+            <span className="information-csharp-text">C#</span>
+          </div>
+
+          <div className="information-postgresql">
+            <DiPostgresql fontSize={"calc(2vw + 20px)"} />{" "}
+            <span className="information-postgresql-text">postgreSQL</span>
+          </div>
         </div>
       </div>
     </div>

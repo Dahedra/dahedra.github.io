@@ -1,6 +1,5 @@
 .information-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -9,51 +8,84 @@
 .information-parent {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    0deg,
-    hsla(224, 34%, 23%, 0.85) 0%,
-    hsla(177, 58%, 13%, 0.808) 100%
-  );
-  padding: 4%;
-  box-shadow: 0px 0px 100px 1px hsla(217, 71%, 36%, 0.808);
-  border-radius: 40px;
-  height: 50vh;
-  width: 40vw;
+}
+
+.title {
+  position: relative;
+  right: calc(2vw + 50px);
+  width: 20vw;
+  font-size: calc(1vw + 10px);
   font-family: "Lato", sans-serif;
-  font-size: calc(1vw + 15px);
   color: white;
+}
+
+.line {
+  width: 20vw;
+  height: 1vh;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.bracket {
+  position: relative;
+  right: calc(2vw + 25px);
+  bottom: calc(2vw + 15px);
+  font-size: calc(2vw + 650px);
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
 }
 
 .information-details {
   display: flex;
   flex-direction: column;
+  width: 20vw;
+  font-size: calc(1vw + 15px);
+}
+
+.information-javascript,
+.information-postgresql,
+.information-csharp,
+.information-react,
+.information-html,
+.information-css {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  border-radius: 20px;
+  width: calc(10vw + 100px);
+  height: 5vh;
+  background: linear-gradient(
+    0deg,
+    hsla(31, 50%, 76%, 1) 0%,
+    rgb(231, 215, 163) 100%
+  );
+  background: #84a98c;
+  margin-bottom: 1vw;
+  padding-left: 2vw;
+  color: rgb(255, 255, 255);
 }
 
-.information-javascript {
-  color: rgb(180, 180, 61);
-  margin-top: 50%;
-  margin-bottom: 50%;
+.information-javascript-text {
+  color: rgb(253, 228, 86);
 }
 
-.information-html {
-  color: rgb(97, 97, 231);
-  margin-bottom: 50%;
+.information-html-text {
+  color: rgb(36, 85, 246);
 }
 
-.information-react {
-  color: rgb(93, 191, 204);
-  margin-bottom: 50%;
+.information-react-text {
+  color: rgb(25, 89, 100);
 }
 
-.information-csharp {
-  color: rgb(151, 109, 231);
-  margin-bottom: 50%;
+.information-css-text {
+  color: rgb(248, 179, 67);
 }
 
-.information-postgresql {
-  color: rgb(26, 137, 228);
-  margin-bottom: 50%;
+.information-csharp-text {
+  color: rgb(125, 55, 255);
 }
 
+.information-postgresql-text {
+  color: rgb(22, 106, 114);
+}
