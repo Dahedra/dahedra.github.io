@@ -16,10 +16,10 @@ export default function Main() {
   var scroll;
   var blur;
 
-  const onScreenProfile = useOnScreen(profileRef, "-300px");
-  const onScreenDescription = useOnScreen(descriptionRef, "-300px");
-  const onScreenPortfolio = useOnScreen(portfolioRef, "-300px");
-  const onScreenInformation = useOnScreen(informatioRef, "-300px");
+  const onScreenProfile = useOnScreen(profileRef, "-100px");
+  const onScreenDescription = useOnScreen(descriptionRef, "-100px");
+  const onScreenPortfolio = useOnScreen(portfolioRef, "-100px");
+  const onScreenInformation = useOnScreen(informatioRef, "-100px");
 
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);

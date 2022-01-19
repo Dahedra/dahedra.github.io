@@ -2,8 +2,11 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material//Toolbar";
 import Button from "@mui/material/Button";
 import "../Data/Fonts/Fonts.css";
+import $ from "jquery";
 
 export default function Menu() {
+  var maxHeight = $(window).height() * 4;
+
   const goToHome = () => {
     window.scrollTo({
       top: 0,
@@ -13,21 +16,21 @@ export default function Menu() {
 
   const goToDescription = () => {
     window.scrollTo({
-      top: 1300,
+      top: maxHeight * 0.25,
       behavior: "smooth",
     });
   };
 
   const goToProyects = () => {
     window.scrollTo({
-      top: 2600,
+      top: maxHeight * 0.5,
       behavior: "smooth",
     });
   };
 
   const goToInformation = () => {
     window.scrollTo({
-      top: 3900,
+      top: maxHeight,
       behavior: "smooth",
     });
   };

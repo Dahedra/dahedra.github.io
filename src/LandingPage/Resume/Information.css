@@ -28,9 +28,8 @@
 
 .bracket {
   position: relative;
-  right: calc(2vw + 25px);
   bottom: calc(2vw + 15px);
-  font-size: calc(2vw + 650px);
+  font-size: calc(4vw + 400px);
   font-family: "Lato", sans-serif;
   font-weight: 100;
   color: rgb(255, 255, 255);
@@ -55,11 +54,6 @@
   border-radius: 20px;
   width: calc(10vw + 100px);
   height: 5vh;
-  background: linear-gradient(
-    0deg,
-    hsla(31, 50%, 76%, 1) 0%,
-    rgb(231, 215, 163) 100%
-  );
   background: #84a98c;
   margin-bottom: 1vw;
   padding-left: 2vw;

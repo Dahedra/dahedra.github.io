@@ -2,7 +2,7 @@
   "name": "mi-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Dahedra/dahedra.github.io",
+  "homepage": "https://dahedra.github.io",
   "dependencies": {
     "@angular/material": "^13.1.0",
     "@emotion/react": "^11.7.1",
@@ -16,7 +16,6 @@
     "@testing-library/user-event": "^13.5.0",
     "angular": "^1.8.2",
     "animate.css": "^4.1.1",
-    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -53,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

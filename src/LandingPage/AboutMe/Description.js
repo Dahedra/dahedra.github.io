@@ -1,6 +1,7 @@
 import React from "react";
 import "./Description.css";
 import "animate.css";
+import $ from "jquery";
 
 const Description = React.forwardRef(DescriptionDefinition);
 
