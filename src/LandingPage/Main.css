@@ -1,10 +1,6 @@
-/* Mobile */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  /* Pc */
+@media only screen and (min-width: 992px)
+{
+/* Pc */
 .App-header {
   z-index: 99;
   position: fixed;
@@ -60,4 +56,61 @@
 .blur {
   backdrop-filter: blur(10px);
 }
+}
+
+@media only screen and (max-width: 992px){
+  /* Mobile */
+  .App-header {
+    z-index: 99;
+    position: fixed;
+  }
+  
+  .scroll-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24447C;
+    height: calc(100vh * 4);
+  }
+  
+  .main-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 12vh;
+    height: 70vh;
+    width: 100vw;
+    background-image: url(./Data/Backgrounds/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 200px 10px black;
+  }
+  
+  .dark-waves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh * 4);
+    width: 100vw;
+    background-image: url(./Data/Backgrounds/olas-deco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .blured-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh * 4);
+    width: 100vw;
+    background-color: transparent;
+  }
+  
+  .blur {
+    backdrop-filter: blur(10px);
+  }
 }

@@ -2,10 +2,9 @@ import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
-import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Button } from "@mui/material";
-import "./Profile.css";
 
 const Profile = React.forwardRef(ProfileDefinition);
 
@@ -29,7 +28,7 @@ function ProfileDefinition({ isVisible }, ref) {
         <div className="profile-details-role">
           <br />
           <span className="profile-role-tagline">
-            Fullstack Junior Web Developer
+            Fullstack Web Developer
           </span>
         </div>
 
@@ -55,8 +54,8 @@ function ProfileDefinition({ isVisible }, ref) {
               className="profile-social-icons"
             />
           </a>
-          <a href="tel:+543435031123" target="_blank">
-            <ContactPhoneIcon
+          <a href="https://api.whatsapp.com/send?phone=+543435031123" target="_blank">
+            <WhatsAppIcon
               sx={{ fontSize: "calc(1vw + 20px)", marginX: "10px" }}
               className="profile-social-icons"
             />
@@ -67,6 +66,7 @@ function ProfileDefinition({ isVisible }, ref) {
               className="profile-social-icons"
             />
           </a>
+
         </div>
 
         <a

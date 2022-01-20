@@ -1,106 +1,221 @@
 @import "animate.css";
 @import "../Data/Fonts/Fonts.css";
 
-.description-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 80vw;
+@media only screen and (min-width: 992px) {
+  /* Pc */
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80vw;
+  }
+
+  .description-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      0deg,
+      hsla(224, 34%, 23%, 0.85) 0%,
+      hsla(177, 58%, 13%, 0.808) 100%
+    );
+    width: calc(25vw + 300px);
+    box-shadow: 0px 0px 200px 8px black;
+    border-radius: 80px;
+    color: white;
+    padding: 2%;
+  }
+
+  .description-intro,
+  .description-studies,
+  .description-hobbys,
+  .description-lifestyle {
+    /* CONTAINERS */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+  }
+
+  .description-aboutme-text,
+  .description-aboutme-graduar,
+  .description-hobbys,
+  .description-lifestyle {
+    /* TEXT CONTAINERS */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(20vw + 400px);
+    border-radius: 100px;
+    font-family: "Lato", sans-serif;
+    font-size: calc(1vw + 15px);
+  }
+
+  .description-intro {
+    /* container */
+  }
+
+  .description-aboutme-text {
+    /*text container*/
+  }
+
+  .description-aboutme-parana {
+  }
+
+  .parana {
+    font-size: calc(1vw + 20px);
+  }
+
+  .description-aboutme-aprender {
+  }
+
+  .innovar {
+    font-size: calc(1vw + 20px);
+  }
+
+  .description-studies {
+    /* container */
+  }
+
+  .description-aboutme-graduar {
+    /*text container*/
+    margin-top: 5%;
+  }
+
+  .description-aboutme-tup {
+    font-size: calc(1vw + 20px);
+  }
+
+  .description-hobbys {
+    /* container */
+  }
+
+  .description-hobbys-videogames {
+    font-size: calc(1vw + 20px);
+  }
+
+  .description-hobbys-baking {
+    font-size: calc(1vw + 20px);
+  }
+
+  .description-lifestyle {
+    /* text container */
+    margin-top: 5%;
+  }
 }
 
-.description-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(
-    0deg,
-    hsla(224, 34%, 23%, 0.85) 0%,
-    hsla(177, 58%, 13%, 0.808) 100%
-  );
-  width: calc(25vw + 300px);
-  box-shadow: 0px 0px 200px 8px black;
-  border-radius: 80px;
-  color: white;
-  padding: 2%;
-}
+@media only screen and (max-width: 992px) {
+  /* Mobile */
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
 
-.description-intro,
-.description-studies,
-.description-hobbys,
-.description-lifestyle {
-  /* CONTAINERS */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1vw;
-}
+  .description-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      0deg,
+      hsla(224, 34%, 23%, 0.85) 0%,
+      hsla(177, 58%, 13%, 0.808) 100%
+    );
+    width: 85vw;
+    height: 80vh;
+    box-shadow: 0px 0px 50px 6px black;
+    border-radius: 80px;
+    color: white;
+    padding: 2%;
+  }
 
-.description-aboutme-text,
-.description-aboutme-graduar,
-.description-hobbys,
-.description-lifestyle {
-  /* TEXT CONTAINERS */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: calc(20vw + 400px);
-  border-radius: 100px;
-  font-family: "Lato", sans-serif;
-  font-size: calc(1vw + 15px);
-}
+  .description-intro,
+  .description-studies,
+  .description-hobbys,
+  .description-lifestyle {
+    /* CONTAINERS */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 80vh;
+  }
 
-.description-intro {
-  /* container */
-}
+  .description-aboutme-text,
+  .description-aboutme-graduar,
+  .description-hobbys,
+  .description-lifestyle {
+    /* TEXT CONTAINERS */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    font-family: "Lato", sans-serif;
+    font-size: calc(1vw + 15px);
+    text-align: center;
+  }
 
-.description-aboutme-text {
-  /*text container*/
-}
+  .description-intro {
+    /* container */
+  }
 
-.description-aboutme-parana {
-}
+  .description-aboutme-text {
+    /*text container*/
+  }
 
-.parana {
-  font-size: calc(1vw + 20px);
-}
+  .description-aboutme-parana {
+  }
 
-.description-aboutme-aprender {
-}
+  .parana {
+    font-size: calc(1vw + 20px);
+  }
 
-.innovar {
-  font-size: calc(1vw + 20px);
-}
+  .description-aboutme-aprender {
+  }
 
-.description-studies {
-  /* container */
-}
+  .innovar {
+    font-size: calc(1vw + 20px);
+  }
 
-.description-aboutme-graduar {
-  /*text container*/
-  margin-top: 5%;
-}
+  .description-studies {
+    /* container */
+  }
 
-.description-aboutme-tup {
-  font-size: calc(1vw + 20px);
-}
+  .description-aboutme-graduar {
+    /*text container*/
+  }
 
-.description-hobbys {
-  /* container */
-}
+  .description-aboutme-tup {
+    font-size: calc(1vw + 20px);
+  }
 
-.description-hobbys-videogames {
-  font-size: calc(1vw + 20px);
-}
+  .ec-mortar-board{
+    font-size: calc(2vw + 18px);
+  }
 
-.description-hobbys-baking {
-  font-size: calc(1vw + 20px);
-}
+  .description-hobbys {
+    /* container */
+  }
 
-.description-lifestyle {
-  /* text container */
-  margin-top: 5%;
+  .description-hobbys-videogames {
+    font-size: calc(1vw + 20px);
+  }
+
+  .description-hobbys-baking {
+    font-size: calc(1vw + 20px);
+  }
+
+  .description-lifestyle {
+    /* text container */
+  }
 }

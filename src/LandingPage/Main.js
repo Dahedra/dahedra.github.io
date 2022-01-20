@@ -4,7 +4,6 @@ import Information from "./Resume/Information";
 import Portfolio from "./Proyects/Portfolio";
 import Menu from "./Components/Menu";
 import ScrollTop from "./Components/ScrollTop";
-import "./Main.css";
 import $ from "jquery";
 import { useState, useEffect, useRef } from "react";
 

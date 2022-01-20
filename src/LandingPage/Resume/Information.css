@@ -1,85 +1,162 @@
-.information-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 80vw;
-}
-.information-parent {
-  display: flex;
-  align-items: center;
+@media only screen and (min-width: 992px) {
+  /* Pc */
+  .information-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80vw;
+  }
+
+  .title {
+    position: relative;
+    right: calc(2vw + 50px);
+    width: 20vw;
+    font-size: calc(1vw + 10px);
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  .line {
+    width: 20vw;
+    height: 1vh;
+    border-radius: 20px;
+    background-color: #f2bb72;
+  }
+
+  .bracket {
+    position: relative;
+    bottom: calc(2vw + 15px);
+    font-size: calc(4vw + 400px);
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+  }
+
+  .information-details {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    font-size: calc(1vw + 15px);
+  }
+
+  .information-javascript,
+  .information-postgresql,
+  .information-csharp,
+  .information-react,
+  .information-html,
+  .information-css {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    width: calc(10vw + 100px);
+    height: 5vh;
+    background: #84a98c;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+    color: rgb(255, 255, 255);
+  }
+
+  .information-javascript-text {
+    color: rgb(253, 228, 86);
+  }
+
+  .information-html-text {
+    color: rgb(36, 85, 246);
+  }
+
+  .information-react-text {
+    color: rgb(25, 89, 100);
+  }
+
+  .information-css-text {
+    color: rgb(248, 179, 67);
+  }
+
+  .information-csharp-text {
+    color: rgb(125, 55, 255);
+  }
+
+  .information-postgresql-text {
+    color: rgb(22, 106, 114);
+  }
 }
 
-.title {
-  position: relative;
-  right: calc(2vw + 50px);
-  width: 20vw;
-  font-size: calc(1vw + 10px);
-  font-family: "Lato", sans-serif;
-  color: white;
-}
+@media only screen and (max-width: 992px) {
+  /* Mobile */
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-.line {
-  width: 20vw;
-  height: 1vh;
-  border-radius: 20px;
-  background-color: #F2BB72;
-}
+    height: 100vh;
+    width: 80vw;
+  }
 
-.bracket {
-  position: relative;
-  bottom: calc(2vw + 15px);
-  font-size: calc(4vw + 400px);
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  color: rgb(255, 255, 255);
-}
+  .title {
+    font-size: calc(1vw + 15px);
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+  }
 
-.information-details {
-  display: flex;
-  flex-direction: column;
-  width: 20vw;
-  font-size: calc(1vw + 15px);
-}
+  .line {
+    width: calc(10vw + 100px);
+    height: 1vh;
+    border-radius: 20px;
+    background-color: #f2bb72;
+  }
 
-.information-javascript,
-.information-postgresql,
-.information-csharp,
-.information-react,
-.information-html,
-.information-css {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 20px;
-  width: calc(10vw + 100px);
-  height: 5vh;
-  background: #84a98c;
-  margin-bottom: 1vw;
-  padding-left: 2vw;
-  color: rgb(255, 255, 255);
-}
+  .bracket {
+    visibility: hidden;
+  }
 
-.information-javascript-text {
-  color: rgb(253, 228, 86);
-}
+  .information-details {
+    font-size: calc(1vw + 20px);
+  }
 
-.information-html-text {
-  color: rgb(36, 85, 246);
-}
+  .information-javascript,
+  .information-postgresql,
+  .information-csharp,
+  .information-react,
+  .information-html,
+  .information-css {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    width: calc(15vw + 150px);
+    height: 8vh;
+    background: #84a98c;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+    color: rgb(255, 255, 255);
+  }
 
-.information-react-text {
-  color: rgb(25, 89, 100);
-}
+  .information-javascript-text {
+    color: rgb(253, 228, 86);
+  }
 
-.information-css-text {
-  color: rgb(248, 179, 67);
-}
+  .information-html-text {
+    color: rgb(36, 85, 246);
+  }
 
-.information-csharp-text {
-  color: rgb(125, 55, 255);
-}
+  .information-react-text {
+    color: rgb(25, 89, 100);
+  }
 
-.information-postgresql-text {
-  color: rgb(22, 106, 114);
+  .information-css-text {
+    color: rgb(248, 179, 67);
+  }
+
+  .information-csharp-text {
+    color: rgb(125, 55, 255);
+  }
+
+  .information-postgresql-text {
+    color: rgb(22, 106, 114);
+  }
 }

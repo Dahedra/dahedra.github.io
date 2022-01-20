@@ -1,6 +1,5 @@
 import React from "react";
 import "animate.css";
-import "./Information.css";
 
 import CodeIcon from "@mui/icons-material/Code";
 import { DiHtml5 } from "react-icons/di";
@@ -13,14 +12,13 @@ const Information = React.forwardRef(InformationDefinition);
 
 function InformationDefinition({ isVisible }, ref) {
   return (
-    <div className="information-container">
-      <div
-        className="information-parent"
+    <div
+        className="information-container"
         ref={ref}
         style={{ visibility: isVisible ? "visible" : "hidden" }}
       >
         <div className="title">
-          <h1>Languages & Technologies</h1>
+          <h1>Lenguajes & Teconologias</h1>
           <hr className="line"/>
         </div>
 
@@ -58,7 +56,6 @@ function InformationDefinition({ isVisible }, ref) {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

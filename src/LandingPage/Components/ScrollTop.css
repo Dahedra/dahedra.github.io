@@ -1,3 +1,20 @@
+/* Mobile */
+.scroll-button {
+  position: relative;
+  top: 85vh;
+  width: 100vw;
+}
+
+.scroll-icon {
+  background: transparent;
+  border-radius: 30px;
+  color: white;
+  font-size: calc(3vw + 50px);
+}
+
+@media only screen and (min-width: 768px) {
+  /* Pc */
+
 .scroll-button {
   position: relative;
   top: 90vh;
@@ -9,4 +26,5 @@
   border-radius: 30px;
   color: white;
   font-size: calc(3vw + 50px);
+}
 }
