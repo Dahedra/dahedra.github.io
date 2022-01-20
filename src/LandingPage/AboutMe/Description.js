@@ -19,13 +19,13 @@ function DescriptionDefinition({ isVisible }, ref) {
         <div className="description-intro">
           <div className="description-aboutme-text">
             <span className="description-aboutme-parana">
-              Soy de <span className="parana">Paraná</span>, Entre Ríos <span class="ec ec-house-with-garden" />
+              Soy de <span className="parana">Paraná</span>, Entre Ríos <span className="ec ec-house-with-garden" />
             </span>
 
             <span className="description-aboutme-aprender">
               Me encanta aprender y sobre todo
               <span className="innovar"> innovar </span>
-              <span class="ec ec-bulb"/>
+              <span className="ec ec-bulb"/>
             </span>
           </div>
         </div>
@@ -37,7 +37,7 @@ function DescriptionDefinition({ isVisible }, ref) {
             <span className="description-aboutme-tup">
               Técnica Universitaria en Programación <br />
             </span>
-            <span class="ec ec-mortar-board" />
+            <span className="ec ec-mortar-board" />
           </span>
         </div>
 
@@ -45,18 +45,18 @@ function DescriptionDefinition({ isVisible }, ref) {
           <span>
             En mi tiempo libre disfruto de{" "}
             <span className="description-hobbys-videogames">videojuegos </span>
-            <span class="ec ec-video-game"/>
+            <span className="ec ec-video-game"/>
           </span>
           <span>
             También me apasiona la{" "}
             <span className="description-hobbys-baking">reposteria </span>
-            <span class="ec ec-cake"/>
+            <span className="ec ec-cake"/>
           </span>
         </div>
 
         <div className="description-lifestyle">
           <span>Procuro ejercitarme regularmente</span>
-          <span class="ec ec-muscle"/>
+          <span className="ec ec-muscle"/>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import Information from "./Resume/Information";
 import Portfolio from "./Proyects/Portfolio";
 import Menu from "./Components/Menu";
 import ScrollTop from "./Components/ScrollTop";
-import $ from "jquery";
 import { useState, useEffect, useRef } from "react";
 
 export default function Main() {
@@ -12,25 +11,29 @@ export default function Main() {
   const descriptionRef = useRef();
   const portfolioRef = useRef();
   const informatioRef = useRef();
-  var scroll;
-  var blur;
 
   const onScreenProfile = useOnScreen(profileRef, "-100px");
   const onScreenDescription = useOnScreen(descriptionRef, "-100px");
   const onScreenPortfolio = useOnScreen(portfolioRef, "-100px");
   const onScreenInformation = useOnScreen(informatioRef, "-100px");
 
+  var blur = 0;
+  var bluredBackground = document.getElementById("blured");
+
+  //Top on Reload Page
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
-  
-  $(window).on("scroll", function () {
-    scroll = $(window).scrollTop();
-    blur = scroll * 0.009;
+  };
 
-    if (blur <= 9) {
-      $("#blured").css("backdrop-filter", "blur(" + blur + "px)");
-    }
+  function blurOnScroll () {
+    blur = window.scrollY * 0.009;
+    bluredBackground.style['backdrop-filter'] = "blur(" + blur + "px)";
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", blurOnScroll);
+
+    return () => window.removeEventListener("scroll", blurOnScroll);
   });
 
   function useOnScreen(ref, rootMargin = "0px") {

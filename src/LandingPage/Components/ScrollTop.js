@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useWindowScroll } from "react-use";
 import Button from "@mui/material/Button";
 import { IoIosArrowUp } from "react-icons/io";
-import $ from "jquery";
 
 
 export default function ScrollTop () {
-    var maxHeight = $(window).height();
+    var maxHeight = window.scrollY;
     const { y:pageYOffset } = useWindowScroll();
     const [visible, setVisible] = useState(false);
 

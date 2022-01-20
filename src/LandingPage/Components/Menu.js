@@ -2,7 +2,6 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material//Toolbar";
 import Button from "@mui/material/Button";
 import "../Data/Fonts/Fonts.css";
-import $ from "jquery";
 
 import * as React from "react";
 import Box from "@mui/material/Box";
@@ -24,6 +23,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MenuIcon from "@mui/icons-material/Menu";
 
+var maxHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight)) * 4;
+var scroll = 0;
+window.addEventListener("scroll", scrolled);
+
 export default function CheckMobileScreen() {
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -35,9 +38,6 @@ export default function CheckMobileScreen() {
     return Menu();
   }
 }
-
-var maxHeight = $(window).height() * 4;
-var scroll = $(window).scrollTop();
 
 const goToHome = () => {
   window.scrollTo({
@@ -81,7 +81,12 @@ const goToInformation = () => {
   });
 };
 
+function scrolled() {
+  scroll = window.scrollY;
+}
+
 function Menu() {
+
   return (
     <>
       <AppBar
@@ -251,7 +256,7 @@ function MobileMenu() {
   return (
     <div>
       <Button onClick={toggleDrawer(anchor, true)}>
-        <MenuIcon sx={{color:"white", fontSize:"calc(3vw + 30px)"}}/>
+        <MenuIcon sx={{ color: "white", fontSize: "calc(3vw + 30px)" }} />
       </Button>
       <Drawer
         anchor={anchor}

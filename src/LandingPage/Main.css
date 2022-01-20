@@ -51,10 +51,7 @@
   height: calc(100vh * 4);
   width: 100vw;
   background-color: transparent;
-}
-
-.blur {
-  backdrop-filter: blur(10px);
+  backdrop-filter: 0px;
 }
 }
 
