@@ -172,25 +172,25 @@ function MobileMenu() {
     >
       <List>
         <ListItem button onClick={goToHome}>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "white"}}>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText primary={"Home"} />
+          <ListItemText primary={"Home"}/>
         </ListItem>
         <ListItem button onClick={goToDescriptionMobile}>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "white"}}>
             <StarBorderIcon />
           </ListItemIcon>
           <ListItemText primary={"Sobre Mí"} />
         </ListItem>
         <ListItem button onClick={goToProyectsMobile}>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "white"}}>
             <FolderOpenIcon />
           </ListItemIcon>
           <ListItemText primary={"Proyectos"} />
         </ListItem>
         <ListItem button onClick={goToInformation}>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "white"}}>
             <LogoDevIcon />
           </ListItemIcon>
           <ListItemText primary={"Información"} />
@@ -201,7 +201,7 @@ function MobileMenu() {
 
       <List>
         <ListItem>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "#3095F2"}}>
             <FacebookIcon />
           </ListItemIcon>
           <a
@@ -213,7 +213,7 @@ function MobileMenu() {
         </ListItem>
 
         <ListItem button>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "#FF4580"}}>
             <InstagramIcon />
           </ListItemIcon>
           <a href="https://www.instagram.com/astronomy_12/" target="_blank">
@@ -222,7 +222,7 @@ function MobileMenu() {
         </ListItem>
 
         <ListItem button>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "#C1C1C1"}}>
             <GitHubIcon />
           </ListItemIcon>
           <a href="https://github.com/Dahedra" target="_blank">
@@ -231,7 +231,7 @@ function MobileMenu() {
         </ListItem>
 
         <ListItem button>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "#3BCD76"}}>
             <WhatsAppIcon />
           </ListItemIcon>
           <a
@@ -242,7 +242,7 @@ function MobileMenu() {
           </a>
         </ListItem>
         <ListItem button>
-          <ListItemIcon>
+          <ListItemIcon sx={{color: "#C1C1C1"}}>
             <EmailIcon />
           </ListItemIcon>
           <a href="mailto:eloisa.villanueva617@gmail.com" target="_blank">
@@ -262,6 +262,12 @@ function MobileMenu() {
         anchor={anchor}
         open={state[anchor]}
         onClose={toggleDrawer(anchor, false)}
+        PaperProps={{
+          sx: {
+            backgroundColor: "#0C2D4E",
+            color: "white",
+          }
+        }}
       >
         {list(anchor)}
       </Drawer>
