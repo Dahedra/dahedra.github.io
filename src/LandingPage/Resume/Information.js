@@ -18,8 +18,8 @@ function InformationDefinition({ isVisible }, ref) {
         style={{ visibility: isVisible ? "visible" : "hidden" }}
       >
         <div className="title">
-          <h1>Lenguajes & Teconologias</h1>
-          <hr className="line"/>
+          <h1 className="title-text">Lenguajes & Tecnologias</h1>
+          <div className="title-line"/>
         </div>
 
         <span className="bracket">&#123;</span>

@@ -55,7 +55,7 @@ const goToDescription = () => {
 
 const goToDescriptionMobile = () => {
   window.scrollTo({
-    top: maxHeight * 0.283,
+    top: maxHeight * 0.236,
     behavior: "smooth",
   });
 };
@@ -69,7 +69,7 @@ const goToProyects = () => {
 
 const goToProyectsMobile = () => {
   window.scrollTo({
-    top: maxHeight * 0.55,
+    top: maxHeight * 0.47,
     behavior: "smooth",
   });
 };

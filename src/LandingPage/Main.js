@@ -17,6 +17,7 @@ export default function Main() {
   const onScreenPortfolio = useOnScreen(portfolioRef, "-100px");
   const onScreenInformation = useOnScreen(informatioRef, "-100px");
 
+  var scrollPosition = 0;
   var blur = 0;
   var bluredBackground = document.getElementById("blured");
 
@@ -26,7 +27,8 @@ export default function Main() {
   };
 
   function blurOnScroll () {
-    blur = window.scrollY * 0.009;
+    scrollPosition = window.scrollY;
+    blur = scrollPosition * 0.009;
     bluredBackground.style['backdrop-filter'] = "blur(" + blur + "px)";
   };
 
