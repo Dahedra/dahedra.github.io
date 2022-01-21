@@ -2,7 +2,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material//Toolbar";
 import Button from "@mui/material/Button";
 import "../Data/Fonts/Fonts.css";
-
+import { useWindowScroll } from "react-use";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -23,10 +23,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MenuIcon from "@mui/icons-material/Menu";
 
-var maxHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight)) * 4;
-var scroll = 0;
-window.addEventListener("scroll", scrolled);
-
 export default function CheckMobileScreen() {
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -39,53 +35,41 @@ export default function CheckMobileScreen() {
   }
 }
 
-const goToHome = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
-
-const goToDescription = () => {
-  window.scrollTo({
-    top: maxHeight * 0.25,
-    behavior: "smooth",
-  });
-};
-
-const goToDescriptionMobile = () => {
-  window.scrollTo({
-    top: maxHeight * 0.236,
-    behavior: "smooth",
-  });
-};
-
-const goToProyects = () => {
-  window.scrollTo({
-    top: maxHeight * 0.5,
-    behavior: "smooth",
-  });
-};
-
-const goToProyectsMobile = () => {
-  window.scrollTo({
-    top: maxHeight * 0.47,
-    behavior: "smooth",
-  });
-};
-
-const goToInformation = () => {
-  window.scrollTo({
-    top: maxHeight,
-    behavior: "smooth",
-  });
-};
-
-function scrolled() {
-  scroll = window.scrollY;
-}
-
 function Menu() {
+  var maxHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight)) * 4;
+  const { y:scroll } = useWindowScroll();
+
+  const goToHome = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  
+  const goToDescription = () => {
+    window.scrollTo({
+      top: maxHeight * 0.25,
+      behavior: "smooth",
+    });
+  };
+  
+  const goToProyects = () => {
+    window.scrollTo({
+      top: maxHeight * 0.5,
+      behavior: "smooth",
+    });
+  };
+  
+  const goToInformation = () => {
+    window.scrollTo({
+      top: maxHeight,
+      behavior: "smooth",
+    });
+  };
+  
+  function scrolled() {
+    scroll = window.scrollY;
+  }
 
   return (
     <>
@@ -151,6 +135,41 @@ function Menu() {
 function MobileMenu() {
   const [state, setState] = React.useState({ left: false });
   const anchor = "left";
+  
+  var maxHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight)) * 4;
+  const { y:scroll } = useWindowScroll();
+
+  const goToHome = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  
+  const goToDescriptionMobile = () => {
+    window.scrollTo({
+      top: maxHeight * 0.236,
+      behavior: "smooth",
+    });
+  };
+  
+  const goToProyectsMobile = () => {
+    window.scrollTo({
+      top: maxHeight * 0.47,
+      behavior: "smooth",
+    });
+  };
+  
+  const goToInformation = () => {
+    window.scrollTo({
+      top: maxHeight,
+      behavior: "smooth",
+    });
+  };
+  
+  function scrolled() {
+    scroll = window.scrollY;
+  }
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (

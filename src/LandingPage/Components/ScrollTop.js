@@ -5,12 +5,12 @@ import { IoIosArrowUp } from "react-icons/io";
 
 
 export default function ScrollTop () {
-    var maxHeight = window.scrollY;
+    var maxHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight)) * 4;
     const { y:pageYOffset } = useWindowScroll();
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
-        if (pageYOffset >  maxHeight * 0.5) {
+        if (pageYOffset >  maxHeight * 0.15) {
           setVisible(true)
         } else{
           setVisible(false)
