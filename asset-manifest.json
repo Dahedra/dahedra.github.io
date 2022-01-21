@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a3ffed9.css",
-    "main.js": "/static/js/main.d60e2dbb.js",
+    "main.css": "/static/css/main.a39f4a84.css",
+    "main.js": "/static/js/main.8a8f4c42.js",
     "static/media/Clouds.jpg": "/static/media/Clouds.d9509155c8363b5b3964.jpg",
     "static/media/Background.jpg": "/static/media/Background.2fd3a7ce6173e9e12847.jpg",
     "static/media/olas-deco.png": "/static/media/olas-deco.a262ae588cd106f762ed.png",
     "static/media/hiromisake-webfont.woff": "/static/media/hiromisake-webfont.dafe01c207f08c0a5f2d.woff",
     "static/media/chinchan-webfont.woff": "/static/media/chinchan-webfont.b62199c568f6619531df.woff",
     "index.html": "/index.html",
-    "main.5a3ffed9.css.map": "/static/css/main.5a3ffed9.css.map",
-    "main.d60e2dbb.js.map": "/static/js/main.d60e2dbb.js.map"
+    "main.a39f4a84.css.map": "/static/css/main.a39f4a84.css.map",
+    "main.8a8f4c42.js.map": "/static/js/main.8a8f4c42.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a3ffed9.css",
-    "static/js/main.d60e2dbb.js"
+    "static/css/main.a39f4a84.css",
+    "static/js/main.8a8f4c42.js"
   ]
 }
