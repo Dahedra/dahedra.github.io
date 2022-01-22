@@ -50,8 +50,6 @@
   align-items: center;
   height: calc(100vh * 4);
   width: 100vw;
-  background-color: transparent;
-  backdrop-filter: 0px;
 }
 }
 
@@ -104,10 +102,23 @@
     align-items: center;
     height: calc(100vh * 4);
     width: 100vw;
-    background-color: transparent;
   }
   
   .blur {
     backdrop-filter: blur(10px);
+  }
+}
+
+@keyframes slowly-blur {
+  100% {
+    backdrop-filter: blur(10px);
+  }
+}
+@keyframes slowly-blur-off {
+  0% {
+    backdrop-filter: blur(10px);
+  }
+  100% {
+    backdrop-filter: blur(0px);
   }
 }

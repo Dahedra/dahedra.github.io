@@ -17,8 +17,7 @@ export default function Main() {
   const onScreenPortfolio = useOnScreen(portfolioRef, "-100px");
   const onScreenInformation = useOnScreen(informatioRef, "-100px");
 
-  var scrollPosition = 0;
-  var blur = 0;
+  const [before, setBefore] = useState(false);
   var bluredBackground = document.getElementById("blured");
 
   //Top on Reload Page
@@ -27,9 +26,14 @@ export default function Main() {
   };
 
   function blurOnScroll () {
-    scrollPosition = window.scrollY;
-    blur = scrollPosition * 0.009;
-    bluredBackground.style['backdrop-filter'] = "blur(" + blur + "px)";
+    if(onScreenDescription){
+      bluredBackground.style.animation = "slowly-blur 1s forwards";
+      setBefore(true);
+
+    } else if(before) {
+      bluredBackground.style.animation = "slowly-blur-off 1s forwards";
+      setBefore(false);
+    }
   };
 
   useEffect(() => {
